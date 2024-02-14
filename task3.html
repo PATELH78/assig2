@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add Function</title>
+</head>
+<body>
+
+<p>Click the buttons to add numbers:</p>
+<button onclick="addMe(5)">Add 5</button>
+<button onclick="addMe(10)">Add 10</button>
+<button onclick="addMe(15)">Add 15</button>
+<p id="result"></p>
+
+<script>
+var total = 0; // Initializing external variable
+
+function addMe(x) {
+    total += x;
+    document.getElementById("result").innerHTML = "The total after adding is: " + total;
+}
+</script>
+
+</body>
+</html>

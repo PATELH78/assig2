@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables Declaration</title>
+    <script>
+        
+        var firstName = "Moe", lastName = "Adam", age = 52;
+    </script>
+</head>
+<body>
+<p>Click the buttons to add numbers:</p>
+<button onclick="addMe(50)">Add 50</button>
+<button onclick="addMe(10)">Add 10</button>
+<button onclick="addMe(100)">Add 100</button>
+<p id="result"></p>
+    <script>
+        const firstname = "Mike";
+        const lastname = "Douglas";
+        const fullname = firstname + " " + lastname;
+        alert(fullname);
+        var total = 0; // Initializing external variable
+
+function addMe(x) {
+    total += x;
+    document.getElementById("result").innerHTML = "The total after adding is: " + total;
+}
+
+function calculateCatAge(catAge) {
+    var catYears = catAge * 7;
+    document.write("Your cat is " + catYears + " years old in cat years!<br>");
+}
+
+// Calling the function three times with three distinct values
+calculateCatAge(2); // Assuming the cat is 2 years old
+calculateCatAge(5); // Assuming the cat is 5 years old
+calculateCatAge(10); // Assuming the cat is 10 years old
+    </script>
+</body>
+</html>
